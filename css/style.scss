@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.row {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    min-height: 500px;
+    border-radius: 25px;
+    >.col {
+        &:nth-of-type(2) {
+            background: #FF416C;
+            background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+            background: linear-gradient(to right, #FF4B2B, #FF416C);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+        }
+    }
+
+    input[type='text'] {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 50px 0 30px;
+        width: 320px;
+        transition: 0.5s;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input[type='submit'] {
+        border: 1px solid #FF4B2B;
+        width: 120px;
+        background-color: #FF4B2B;
+        height: 40px;
+        color: white;
+        font-size: 14px;
+        border-radius: 40px;
+        margin: auto;
+        transition: 0.4s;
+        &:hover{
+            box-shadow: 0 0 10px #ff4b2b;
+            transition: 0.4s;
+        }
+    }
+
+    ul {
+        margin-top: 40px;
+        li {
+            width: 500px;
+            position: relative;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.6117647059);
+            border-radius: 6px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 10px 90px 10px 30px;
+            word-break: break-all;
+            span {
+                height: 20px;
+                background-color: red;
+                color: white;
+                display: flex;
+                position: absolute;
+                right: 10px;
+                align-items: center;
+                justify-content: center;
+                padding: 14px;
+                font-size: 14px;
+                border-radius: 7px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:hover{
+                    box-shadow: 0 0 10px red;
+                }
+            }
+        }
+    }
+}
